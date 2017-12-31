@@ -15,11 +15,11 @@ app.get('/', function (req, res) {
 });
 
 app.get('/andyofwonderfulmoscow', function (req, res) {
-  res.send('Happy New Sukin-Bukin Andrew!');
+  res.send('Happy New Sukin-Bukin Andrew 2💩18!');
 });
 
 app.get('/iness', function (req, res) {
-  res.send('Inessa! Happy Perfect New Year 2018! \r \n ( ͡° ͜ʖ ͡°)');
+  res.send('Inessa 🐱! Happy Perfect 🔬 New Year 2🎅18! ( ͡° ͜ʖ ͡°)🤘');
 });
 
 app.listen(8080, function () {
