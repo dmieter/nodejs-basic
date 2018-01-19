@@ -9,6 +9,9 @@
 
 var express = require('express');
 var app = express();
+var path = require('path')
+
+app.use(express.static(path.join(__dirname, 'gt/html')));
 
 app.get('/', function (req, res) {
   res.send('DMIETER.ORG!');
@@ -20,6 +23,14 @@ app.get('/andyofwonderfulmoscow', function (req, res) {
 
 app.get('/iness', function (req, res) {
   res.send('Inessa 🐱! Happy Perfect 🔬 New Year 2🎅18! ( ͡° ͜ʖ ͡°)🤘');
+});
+
+app.get('/gt/4founders', function (req, res) {
+  res.sendFile(path.join(__dirname + "/gt/html/championship-of-the-four-founders.html"));
+});
+
+app.get('/gt/christmas-2017', function (req, res) {
+  res.sendFile(path.join(__dirname + "/gt/html/christmas-cup-2017.html"));
 });
 
 app.listen(8080, function () {
