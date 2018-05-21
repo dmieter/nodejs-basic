@@ -33,6 +33,10 @@ app.get('/gt/christmas-2017', function (req, res) {
   res.sendFile(path.join(__dirname + "/gt/html/christmas-cup-2017.html"));
 });
 
+app.get('/gt/junior/2018', function (req, res) {
+  res.sendFile(path.join(__dirname + "/gt/html/junior-2018.html"));
+});
+
 app.listen(8080, function () {
   console.log('Example app listening on port 8080!');
 });
